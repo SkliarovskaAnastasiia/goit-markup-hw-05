@@ -486,8 +486,7 @@ body {
 
 .subscribe-form {
   display: flex;
-  align-items: flex-end;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .subscribe-form-title {
@@ -567,9 +566,9 @@ body {
   width: 100%;
   height: 100%;
 
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -594,14 +593,14 @@ body {
 .close-btn {
   position: absolute;
   top: 24px;
-  left: 24px;
+  right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
   padding: 0;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 24px;
@@ -660,7 +659,7 @@ body {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  padding-left: 36px;
+  padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -686,10 +685,11 @@ body {
 
 .order-form-input.textarea {
   font-size: 12px;
-  line-height: 0.04;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   height: 120px;
-  padding-left: 8px 16px;
+  padding: 8px 16px;
   resize: none;
 }
 
@@ -704,7 +704,7 @@ body {
   margin-bottom: 24px;
 }
 
-.custom-chekbox {
+.custom-checkbox {
   width: 16px;
   height: 16px;
   display: inline-flex;
@@ -719,7 +719,7 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .order-form-label > .custom-chekbox {
+.checkbox:checked + .checkbox-label > .custom-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
